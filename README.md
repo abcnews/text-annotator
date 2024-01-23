@@ -11,6 +11,7 @@ This plugin can be used with or without [Odyssey](https://github.com/abcnews/ody
 1. Add the `text-annotator` JavaScript to your article in CoreMedia (content id: 101718598).
 2. Add a config, e.g. `#textannotatorBRACEtxtffffffff571axorange` on its own line.
 3. You cana dd multiple `BRACE` entries, one per style.
+4. For any text you want to annotate, add the `textString` in brackets at the end, and italicise the whole thing. e.g. _No (orange)_
 
 Each BRACE attribute consists of:
 
