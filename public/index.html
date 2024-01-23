@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>text-annotator</title>
+  <!-- If you add `extractCSS:true` to your build config, add the <link> below -->
+  <!-- <link rel="stylesheet" href="index.css" /> -->
+  <script src="index.js"></script>
+  <!-- If you add `addModernJS:true` to your build config, replace the <script> above with the ones below -->
+  <!-- <script type="module" src="index_modern.js"></script> -->
+  <!-- <script nomodule src="index.js"></script> -->
+</head>
+
+<body>
+  <div data-mount id="textannotatorBRACEtxtffffffff571axorangeBRACEtxt000000edf0f2xgreyBRACEtxt0000000092edxblue"></div>
+  <!-- Mock Odyssey's loaded event so the `whenOdysseyLoaded` promise resolves -->
+  <p class="paragraph_paragraph___QITb">This is a test article with various&nbsp;<em>annotations&nbsp;(orange)</em>
+    in&nbsp;<em>different colours&nbsp;(grey)</em>. There can be multiple&nbsp;<em>annotations&nbsp;(blue)</em> and they
+    can even be&nbsp;<em>different annotations (punk)</em>.</p>
+  <script>
+    window.dispatchEvent(new CustomEvent('odyssey:api'));
+  </script>
+</body>
+
+</html>
