@@ -1,6 +1,6 @@
 {
 	"name": "text-annotator",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Annotate text in the page with predefined and styles",
 	"license": "MIT",
 	"private": true,
