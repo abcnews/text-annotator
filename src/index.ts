@@ -55,7 +55,7 @@ function renderApp() {
         })
       })
     }
-    if (config.type === 'box') {
+    if (config.type === 'box' || config.type === 'dot') {
       const el = document.createElement('span');
       Object.assign(el.style, {
         display: 'inline-block',
@@ -63,12 +63,13 @@ function renderApp() {
         border: `1px solid ${config.hexCodeBg}`,
         width: '8px',
         height: '8px',
-        margin: '0 0 0 0.2em',
+        margin: '0 0.2em 0 0.3em',
+        borderRadius: config.type === 'dot' ? '8px' : 0
       });
-      newEl.appendChild(el)
+      newEl.prepend(el);
     }
 
-    annotation.replaceWith(newEl)
+    annotation.replaceWith(newEl);
 
   })
 }
